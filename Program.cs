@@ -43,6 +43,7 @@ namespace EPGPWeb
 
 			BasicHttpServer server = new BasicHttpServer( config.Prefix );
 			server.HandleFiles( baseDir );
+			server.RegisterAPIHandler( "api", new API() );
 
 			await server.Start();
 		}

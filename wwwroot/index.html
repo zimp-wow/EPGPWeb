@@ -3,6 +3,8 @@
 	<head>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/dropzone.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -22,15 +24,16 @@
 			</nav>
 		</div>
 
-		<div id="standingsTab" class="col s12">
-			Standings
+		<div id="standingsTab" class="container">
 		</div>
-		<div id="manageTab" class="col s12">
-			Management
+		<div id="manageTab" class="container">
+			<form action="api/uploadSnapshot" class="dropzone" method="post" enctype="multipart/form-data">
+			</form>
 		</div>
 
 	    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 	    <script type="text/javascript" src="js/materialize.min.js"></script>
+	    <script type="text/javascript" src="js/dropzone.min.js"></script>
 	    <script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>
